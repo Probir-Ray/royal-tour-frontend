@@ -1,0 +1,44 @@
+[
+	{
+		"id": 1,
+		"name": "TreeHouse Villas",
+		"location": "Ko Yao, Thailand",
+		"description": "32 smoke-free guestrooms, Daily housekeeping, On a private beach & Restaurant and 2 bars/lounges",
+		"img": "https://i.ibb.co/mzGsjFB/Tree-House-Villas.jpg"
+	},
+	{
+		"id": 2,
+		"name": "Explora Patagonia",
+		"location": "Torres Del Paine, Chile",
+		"description": "50 smoke-free guestrooms, Daily housekeeping, Restaurant and bar/lounge, Indoor pool and 4 spa tubs, Free airport shuttle.",
+		"img": "https://i.ibb.co/cx5Y7XF/explora-Patagonia.jpg"
+	},
+	{
+		"id": 3,
+		"name": "Grand Miramar",
+		"location": "Puerto Vallarta, Mexico",
+		"description": "Daily housekeeping, Near the beach, 2 restaurants and 2 bars/lounges, Full-service spa, 4 outdoor pools",
+		"img": "https://i.ibb.co/2YgRpkH/Grand-Miramar.jpg"
+	},
+	{
+		"id": 4,
+		"name": "Kakslauttanen Arctic Resort",
+		"location": "Sodankyla, Finland",
+		"description": "214 smoke-free guestrooms, Housekeeping (on request), 6 meeting rooms, Limited hour front desk, Free WiFi and free parking",
+		"img": "https://i.ibb.co/QryM7mn/Kakslauttanen-Arctic-Resort.jpg"
+	},
+	{
+		"id": 5,
+		"name": "AQUA DOME - Tirol Therme Längenfeld",
+		"location": "Laengenfeld, Austria",
+		"description": "200 guestrooms, Daily housekeeping, 3 restaurants and 2 bars/lounges, Full-service spa, 3 indoor pools and 5 outdoor pools, Free water park",
+		"img": "https://i.ibb.co/G39GYy8/AQUA-DOME.jpg"
+	},
+	{
+		"id": 6,
+		"name": "HOSHINOYA Fuji",
+		"location": "Fujikawaguchiko, Japan",
+		"description": "40 guestrooms, Daily housekeeping, Restaurant and bar/lounge, Breakfast available, Terrace",
+		"img": "https://i.ibb.co/2kJ098C/HOSHINOYA-Fuji.jpg"
+	}
+]
