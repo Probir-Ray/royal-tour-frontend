@@ -11,6 +11,8 @@ import AddPlan from './Components/AddPlan/AddPlan';
 import Plans from './Components/Plans/Plans';
 import PlaceOrder from './Components/PlaceOrder/PlaceOrder';
 import PrivateRoute from './Components/Login/PrivateRoute/PrivateRoute';
+import MyOrders from './Components/MyOrders/MyOrders';
+import ManageAllOrders from './Components/ManageAllOrders/ManageAllOrders';
 
 function App() {
   return (
@@ -33,6 +35,12 @@ function App() {
             </Route>
             <PrivateRoute path='/place-order/:planId'>
               <PlaceOrder></PlaceOrder>
+            </PrivateRoute>
+            <PrivateRoute path='/my-orders'>
+              <MyOrders></MyOrders>
+            </PrivateRoute>
+            <PrivateRoute path='/all-orders'>
+              <ManageAllOrders></ManageAllOrders>
             </PrivateRoute>
             <Route path='/login'>
               <Login></Login>
