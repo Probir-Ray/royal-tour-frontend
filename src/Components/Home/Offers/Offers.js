@@ -4,13 +4,13 @@ import Offer from '../Offer/Offer';
 const Offers = () => {
     const [plans, setPlans] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/')
+        fetch('https://lit-hamlet-13017.herokuapp.com/')
         .then(res => res.json())
         .then(data => setPlans(data))
     }, [])
 
     return (
-        <div className="container-fluid my-5">
+        <div className="container-fluid my-4 py-4" id="plans">
             <h2 className="text-center my-4">Plans</h2>
             <div className="row g-3">
                 {

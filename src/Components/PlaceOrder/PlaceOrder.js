@@ -1,11 +1,13 @@
 import React, {useState, useEffect} from 'react';
 import { useParams } from 'react-router';
+import { Link } from 'react-router-dom';
 
 const PlaceOrder = () => {
     const { planId } = useParams();
     const [order, setOrder] = useState({});
+    const [plans, setPlans] = useState([]);
     useEffect(()=> {
-        const url = `http://localhost:5000/place-order/${planId}`;
+        const url = `https://lit-hamlet-13017.herokuapp.com/place-order/${planId}`;
         fetch(url).then(res => res.json()).then(data => setOrder(data));
     }, []);
 
@@ -18,8 +20,9 @@ const PlaceOrder = () => {
                     <h5>{order.name}</h5>
                     <p>{order.desc}</p>
                     <p>Location: {order.location}</p>
+                    <h4 className="mb-4">$ {order.price}</h4>
+                    <Link to={`/`}><button className="btn btn-primary">Booking</button></Link>
                 </div>
-                <div className="col-md-6"></div>
             </div>
         </div>
     );

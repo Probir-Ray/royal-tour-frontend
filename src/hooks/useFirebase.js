@@ -9,15 +9,11 @@ const useFirebase = () => {
     const [user, setUser] = useState({})
     const [isLoading, setIsLoading] = useState(true);
     const auth = getAuth();
+    const googleProvider = new GoogleAuthProvider();
 
     // Google sign in
-    const signInUsingGoogle = () => {
-        const googleProvider = new GoogleAuthProvider();
-        signInWithPopup(auth, googleProvider)
-        .then(result => {
-            setUser(result.user);
-        })
-        .finally(() => setIsLoading(false));
+    const signInUsingGoogle = () => {    
+        return signInWithPopup(auth, googleProvider);
     }
 
     // Observe for user state changed.

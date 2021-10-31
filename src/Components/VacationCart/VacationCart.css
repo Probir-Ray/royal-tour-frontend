@@ -1,0 +1,9 @@
+.cart {
+    position: fixed;
+    right: 3px;
+    background-color: #fff;
+    padding: 8px;
+    width: 220px;
+    top: 0;
+    border: 3px solid #ddd;
+}

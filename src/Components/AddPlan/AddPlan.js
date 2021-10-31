@@ -16,7 +16,7 @@ const AddPlan = () => {
 
         const newPlan = {name, location, desc, img, price};
 
-        fetch('http://localhost:5000/plans', {
+        fetch('https://lit-hamlet-13017.herokuapp.com/plans', {
             method:'POST',
             headers: {
                 'content-type': 'application/json'

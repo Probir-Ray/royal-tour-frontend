@@ -10,6 +10,7 @@ import NotFound from './Components/Home/NotFound/NotFound';
 import AddPlan from './Components/AddPlan/AddPlan';
 import Plans from './Components/Plans/Plans';
 import PlaceOrder from './Components/PlaceOrder/PlaceOrder';
+import PrivateRoute from './Components/Login/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -24,15 +25,15 @@ function App() {
             <Route path='/home'>
               <Home></Home>
             </Route>
-            <Route path='/add-new-plan'>
+            <PrivateRoute path='/add-new-plan'>
               <AddPlan></AddPlan>
-            </Route>
+            </PrivateRoute>
             <Route path='/plans'>
               <Plans></Plans>
             </Route>
-            <Route path='/place-order/:planId'>
+            <PrivateRoute path='/place-order/:planId'>
               <PlaceOrder></PlaceOrder>
-            </Route>
+            </PrivateRoute>
             <Route path='/login'>
               <Login></Login>
             </Route>

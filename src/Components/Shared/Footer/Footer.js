@@ -29,10 +29,8 @@ const Footer = () => {
                         <h4 className="mb-3">Sitemap</h4>
                         <ul>
                             <li><a href="/">Home</a></li>
-                            <li><a href="/about">About Us</a></li>
-                            <li><a href="/home#services">Services</a></li>
+                            <li><a href="/home#plans">Plans</a></li>
                             <li><a href="/contact">Contact Us</a></li>
-                            <li><a href="/register">Signup</a></li>
                             <li><a href="/login">Login</a></li>
                         </ul>
                     </div>

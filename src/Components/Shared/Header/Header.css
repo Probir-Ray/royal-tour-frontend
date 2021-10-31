@@ -1,4 +1,5 @@
-.nav-link, .nav-link:visited {
+.nav-link, .nav-link:visited,
+.nav-link:active, .nav-link:focus {
     color: #f3f3f3;
 }
 

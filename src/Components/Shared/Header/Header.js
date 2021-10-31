@@ -15,14 +15,17 @@ const Header = () => {
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
                     <Nav.Link as={Link} to="/">Home</Nav.Link>
+                    <Nav.Link as={HashLink} to="/home#plans">Tour Plans</Nav.Link>
+                    <Nav.Link as={HashLink} to="/home#testimonial">Testimonial</Nav.Link>
                     <Nav.Link as={Link} to="/add-new-plan">Add New Plan</Nav.Link>
                     {/* <Nav.Link as={Link} to="/login">Login</Nav.Link> */}
+                    <Navbar.Text>
+                        &nbsp;&nbsp;<a href="#login">{user?.displayName}</a>
+                    </Navbar.Text>
+                    &nbsp;&nbsp;
                     { user?.email ? 
                         <button onClick={logout} className="btn btn-light">Logout</button> :
                         <Nav.Link as={Link} to="/login">Login</Nav.Link>}
-                    <Navbar.Text>
-                        &nbsp;&nbsp;Signed in as: <a href="#login">{user?.displayName}</a>
-                    </Navbar.Text>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
