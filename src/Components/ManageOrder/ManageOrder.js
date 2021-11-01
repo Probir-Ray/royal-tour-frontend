@@ -33,6 +33,18 @@ const ManageOrder = props => {
         })
     }
 
+    // Update order status
+    const handelUpdateOrder = id => {
+        fetch(`http://localhost:5000/orders/${id}`, {
+            method: 'PUT',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(order)
+        })
+        .then()
+    }
+
     return (
         <>
             <tbody>
@@ -43,7 +55,7 @@ const ManageOrder = props => {
                     <td>{order.key}</td>
                     <td>{order.status || 'Pending'}</td>
                     <td>
-                            <button className="btn btn-primary btn-sm">Approved</button>
+                            <button onClick={() => handelUpdateOrder(order._id)} className="btn btn-primary btn-sm">Approved</button>
                             &nbsp;
 
                             <button onClick={() => handelDeleteOrder(order._id)} className="btn btn-danger btn-sm">Delete</button>
