@@ -20,7 +20,7 @@ const ManageAllOrders = () => {
                             <th scope="col">Name</th>
                             <th scope="col">Address</th>
                             <th scope="col">City</th>
-                            <th scope="col">Tour Name</th>
+                            <th scope="col">Tour</th>
                             <th scope="col">Status</th>
                             <th scope="col">Action</th>
                         </tr>
