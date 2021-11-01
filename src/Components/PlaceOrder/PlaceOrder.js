@@ -16,7 +16,7 @@ const PlaceOrder = () => {
         const status = false;
         data.status = status;
 
-        fetch('http://localhost:5000/orders', {
+        fetch('https://lit-hamlet-13017.herokuapp.com/orders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

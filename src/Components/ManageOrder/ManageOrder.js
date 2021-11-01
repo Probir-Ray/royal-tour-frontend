@@ -6,7 +6,7 @@ const ManageOrder = props => {
     // const keys = order.key;
     // // console.log(keys);
     // useEffect(() => {
-    //     fetch('http://localhost:5000/orders/keys', {
+    //     fetch('https://lit-hamlet-13017.herokuapp.com/orders/keys', {
     //         method: 'POST',
     //         headers: {
     //             'content-type': 'application/json'
@@ -22,7 +22,7 @@ const ManageOrder = props => {
 
     // Delete an order
     const handelDeleteOrder = id => {
-        fetch(`http://localhost:5000/orders/${id}`, {
+        fetch(`https://lit-hamlet-13017.herokuapp.com/${id}`, {
             method: 'DELETE',
         })
         .then(res => res.json())
@@ -35,7 +35,7 @@ const ManageOrder = props => {
 
     // Update order status
     const handelUpdateOrder = id => {
-        fetch(`http://localhost:5000/orders/${id}`, {
+        fetch(`https://lit-hamlet-13017.herokuapp.com/${id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
