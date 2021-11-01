@@ -1,9 +1,38 @@
-import React from 'react';
-import { Nav } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
 
 const ManageOrder = props => {
     const order = props.order;
+    // const [key, setKey] = useState([]);
+    // const keys = order.key;
+    // // console.log(keys);
+    // useEffect(() => {
+    //     fetch('http://localhost:5000/orders/keys', {
+    //         method: 'POST',
+    //         headers: {
+    //             'content-type': 'application/json'
+    //         },
+    //         body: JSON.stringify(keys)
+    //     })
+    //     .then(res => res.json())
+    //     .then(data => {
+    //         setKey(data);
+    //     });
+    // }, [])
+
+
+    // Delete an order
+    const handelDeleteOrder = id => {
+        fetch(`http://localhost:5000/orders/${id}`, {
+            method: 'DELETE',
+        })
+        .then(res => res.json())
+        .then(data => {
+            if(data.deletedCount > 0) {
+                alert('Deleted successfully');
+            }
+        })
+    }
+
     return (
         <>
             <tbody>
@@ -14,9 +43,10 @@ const ManageOrder = props => {
                     <td>{order.key}</td>
                     <td>{order.status || 'Pending'}</td>
                     <td>
-                        <Nav.Link as={Link} to="/">
                             <button className="btn btn-primary btn-sm">Approved</button>
-                        </Nav.Link>
+                            &nbsp;
+
+                            <button onClick={() => handelDeleteOrder(order._id)} className="btn btn-danger btn-sm">Delete</button>
                     </td>
                 </tr>
             </tbody>

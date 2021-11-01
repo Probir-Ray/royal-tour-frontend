@@ -8,6 +8,8 @@ const ManageAllOrders = () => {
         .then(res => res.json())
         .then(data => setOrders(data));
     }, []);
+
+    
     return (
         <div className="container my-4 py-5">
             <h3 className="text-center">All Orders</h3>

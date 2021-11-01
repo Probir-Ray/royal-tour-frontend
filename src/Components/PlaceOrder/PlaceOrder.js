@@ -70,7 +70,6 @@ const PlaceOrder = () => {
                 </div>
                 
                     <input type="submit" className="form-control btn btn-primary"/>
-                    <Link to={`/`}><button className="btn btn-primary">Booking</button></Link>
                 </form>                     
             </div>
         </div>
