@@ -1,6 +1,6 @@
 # Project Name: Royal Tour
 
-Deploy Link [Royal Tour Project](https://healthcare-project-f7f6b.web.app).
+Deploy Link [Royal Tour Project](https://royal-tour-14c3e.web.app/).
 
 ## Features:
 - Tour, vacation related website.
