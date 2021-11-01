@@ -38,7 +38,6 @@ const Footer = () => {
                             <li><a href="/">Home</a></li>
                             <li><Nav.Link as={HashLink} to="/home#plans">Tour Plans</Nav.Link></li>
                             <li><Nav.Link as={HashLink} to="/home#testimonial">Testimonial</Nav.Link></li>
-                            <li><Nav.Link as={Link} to="/add-new-plan">Add New Plan</Nav.Link></li>
                         </ul>
                     </div>
                 </div>
